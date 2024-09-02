@@ -692,7 +692,7 @@ body {
   color: var(--color-white);
 }
 
-/* .wrapper-projects {
+ .wrapper-projects {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -702,7 +702,7 @@ body {
   height: 500px;
 
   margin-top: 2rem;
-} */
+} 
 
 .container-projects {
   height: 100%;
@@ -730,14 +730,14 @@ body {
 }
 
 .card-project {
-  /* width: 320px; */
-  /* height: 450px; */
+ width: 320px; 
+ height: 450px; 
 
-  height: 100%;
+  height: 50%;
   width: 100%;
 
   padding: 30px 20px 20px;
-  /* margin: 0px 10px; */
+   margin: 0px 10px; 
 
   position: relative;
   background: var(--color-white);
@@ -767,7 +767,7 @@ body {
   z-index: -1;
 }
 
-/* .content-project {
+.content-project {
   height: 100%;
   width: 100%;
 
@@ -775,7 +775,7 @@ body {
   flex-direction: column;
 
   z-index: 1;
-} */
+} 
 
 .image-project {
   max-height: 240px;

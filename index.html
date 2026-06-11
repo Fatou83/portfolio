@@ -1,302 +1,455 @@
 <!DOCTYPE html>
-<html lang="en-GB">
-
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatou Mané Ndiaye — Portfolio</title>
+  <meta name="description" content="Fatou Mané Ndiaye — Consultante informatique &amp; Développeuse Web et Mobile. Angular, Flutter, Spring, Node.js, Keycloak.">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
   <link rel="stylesheet" href="styles.css">
-  <title>Portfolio-Fatou</title>
 </head>
-
 <body>
-  <!-- Header -->
-  <section id="header">
-    <a class="header-title" >
-      <h1>
-        FMN
-      </h1>
-    </a>
 
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="logo">FMN<span>.</span></a>
 
-    <nav class="navbar">
-      <button class="menu-hamburguer"></button>
+      <nav class="navbar" id="navbar">
+        <ul class="navbar-links">
+          <li><a href="#about" class="nav-link">À propos</a></li>
+          <li><a href="#skills" class="nav-link">Compétences</a></li>
+          <li><a href="#experience" class="nav-link">Expérience</a></li>
+          <li><a href="#projects" class="nav-link">Projets</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
 
-      <ul class="navbar-links">
-        <li><a href="#person">Home</a></li>
-        <li><a href="#about">About</a></li>
-       <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-      </ul>
-    </nav>
+      <a href="public/document/Fatou_cv.pdf" download class="btn btn-outline nav-cta">
+        <i class="fa-solid fa-download"></i> CV
+      </a>
 
-  </section>
-  <!-- End Header -->
-
-  <!-- Person -->
-  <section id="person">
-    <div class="person-content">
-      <div class="person-name">
-        <h1>Developer fullstack <span></span></h1>
-        <h1>Hello, I am<span></span></h1>
-        <h1>Fatou mané Ndiaye<span></span></h1>
-      </div>
-
-      <div class="stacks-content">
-        <h3>Techs :</h3>
-
-        
-          <ul class="stacks">
-            <li>
-              <div data="HTML">
-                <img src="./svg/html.svg" alt="html-icon">
-              </div>
-            </li>
-          
-            <li>
-              <div data="CSS">
-                <img src="./svg/css.svg" alt="css-icon">
-              </div>
-            </li>
-          
-            <li>
-              <div data="JS">
-                <img src="./svg/js.svg" alt="js-icon">
-              </div>
-            </li>
-            
-            <li>
-              <div data="Flutter">
-                <img src="./svg/flutter.svg" alt="js-icon">
-              </div>
-            </li>
-
-            <li>
-              <div data="Angular">
-                <img src="./svg/angular.svg" alt="js-icon">
-              </div>
-            </li>
-
-            <li>
-              <div data="WordPress">
-                <img src="./svg/wordpress.svg" alt="js-icon">
-              </div>
-            </li>
-            <li>
-              <div data="Nodejs">
-                <img src="./svg/nodejs.svg" alt="js-icon">
-              </div>
-            </li>
-        </div>
-
-      </div>
-    
-
-    <div class="person-background">
-      <div class="wrapper-profile-photo">
-        <img class="profile-photo" src="img/pp.png" alt="foto-fatou">
-      </div>
-
-      <div class="links">
-        <a href="https://github.com/Fatou83" target="_blank">
-          <img src="./svg/logo-github.svg" alt="icon-github">
-        </a>
-       
-        <a href="https://www.linkedin.com/in/fatou-man%C3%A9-ndiaye-2a87b4167/" target="_blank">
-          <img src="./svg/logo-linkedin.svg" alt="icon-linkin">
-        </a>
-      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
-  <!-- End Person -->
+  </header>
 
-  <!-- About -->
-  <section id="about">
-    <div class="background-about">
-      <div class="img-wrapper">
-        <img src="img/img-background.jpg" alt="img2-notebook">
-      </div>
-    </div>
-
-    <div class="box-about">
-      <div class="section-subtitle">
-        <h2>
-          <p>💻</p>
-          <p><span>senior</span> developer</p>
-        </h2>
-      </div>
-
-      <h3>
-        I am a senior developer with experiences in
-        <p>Angular, Spring boot, Ionic, Flutter, WordPress, Drupal...</p>
-      </h3>
-
-      <h4>
-        In my previous roles, I have successfully delivered high-quality, user-friendly websites and web applications
-        that meet both client requirements and industry standards. My attention to detail, problem-solving abilities, and
-        collaborative nature have enabled me to work effectively in fast-paced environments and deliver projects on
-        time and within budget.
-      </h4>
-
-      <h4>
-        Here is my <p>CV </p> to download.
-      </h4>
-
-      <div class="button-cta">
-        <a href="public/document/CV_Fatou_Mane_Ndiaye_EN.pdf" download="CV-Fatou" aria-label="resume Fatou mane ndiaye">
-          Resume
-        </a>&nbsp;&nbsp;
-
-        <a href="public/document/Fatou_cv.pdf" download="CV-Fatou" aria-label="resume Fatou mane ndiaye">
-          CV
-        </a>
-      </div>
-    
-    </div>
-  </section>
-  <!-- End about -->
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="contact-icon-content">
-      <h2>Projects</h2>
-    </div>
-
-    <div class="container-projects">
-     
-
-      <div class="wrapper-projects">
-      
-       
-        <div class="card-project">
-      
-          <span class="projects-title">website</span>
-          
-          <div class="cta-project">
-            <p><h3>techs: html, css, wordpress</h3> 
-             <a href="https://websoft.website/">
-               Lien
-              </a>
-           </p>
-          </div>
-        </div>
-
-        <div class="card-project">
-          <span>E-commerce website</span>
-          <div class="cta-project">
-            <p> <h3>techs: html, css, wordpress, Woocommerce...</h3>
-         <a href="https://zouawa.com/">
-            Lien
-          </a>
-          </p>
-        </div>
-        </div>
-
-        <div class="card-project">
-          <span>IoT Transport Application</span>
-          <div class="cta-project">
-          <p><h3>techs: #Spring boot, #angular, #ionic...</h3>  </br>
-          <a href="">
-            Privé
-          </a>
-         </p>
-        </div>
-        </div>
-        <div class="card-project">
-          <span>Appointment Management Application</span>
-          <div class="cta-project">
-          <p> <h3>techs: #Nodejs, #Flutter...</h3>  </br>
-          <a href="">
-            Privé 
-          </a>
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Bonjour, je suis</p>
+        <h1>Fatou Mané Ndiaye</h1>
+        <p class="hero-role">
+          <span class="typed">Consultante informatique &amp; Développeuse Web/Mobile</span>
         </p>
-      </div>
+        <p class="hero-desc">
+          Je conçois et développe des applications web et mobiles modernes — du front-end au back-end —
+          avec une attention particulière portée à la collecte et au suivi-évaluation des données.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
         </div>
 
-        <div class="card-project">
-          <span>Application announcement</span>
-          <div class="cta-project">
-            <p><h3>techs: #Nodejs, #Flutter... </h3></br>
-              <a href="">
-                Privé 
-              </a>
-            </p>
+        <div class="hero-socials">
+          <a href="https://github.com/Fatou83" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/fatou-man%C3%A9-ndiaye-2a87b4167/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://wa.me/221777489885" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:fatoumanendiaye83@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="photo-ring">
+          <img src="img/pp.png" alt="Photo de Fatou Mané Ndiaye">
+        </div>
+        <div class="hero-badge">
+          <i class="fa-solid fa-code"></i>
+          <span>5 ans d'expérience</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Défiler vers le bas">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-tag">À propos</p>
+      <h2 class="section-title">Profil</h2>
+
+      <div class="about-grid">
+        <p class="about-text">
+          Développeuse web et mobile passionnée, avec une solide expertise en développement front-end et
+          back-end et en conception d'applications mobiles hybrides (Flutter, Ionic, Angular, Spring, Node.js,
+          Keycloak). Capable de transformer des idées en produits numériques innovants, avec une approche
+          centrée sur l'utilisateur. Sensibilisée à la conception de dispositifs de collecte et de
+          suivi-évaluation de données, j'apporte une vision transversale entre développement technique et
+          exploitation des données. Dynamique, adaptable et orientée résultats.
+        </p>
+
+        <div class="about-facts">
+          <div class="fact">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <span>Localisation</span>
+              <p>Sacrée Cœur, Dakar, Sénégal</p>
+            </div>
           </div>
-        
+          <div class="fact">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <span>Formation</span>
+              <p>Master Dév. Web &amp; Mobile — INSTITUT SUP'INFO</p>
+            </div>
+          </div>
+          <div class="fact">
+            <i class="fa-solid fa-language"></i>
+            <div>
+              <span>Langues</span>
+              <p>Français (courant), Anglais (B1), Wolof (courant)</p>
+            </div>
+          </div>
+          <div class="fact">
+            <i class="fa-solid fa-id-card"></i>
+            <div>
+              <span>Permis de conduire</span>
+              <p>Catégorie B</p>
+            </div>
+          </div>
         </div>
-
-
       </div>
-
     </div>
   </section>
-  <!-- End Projects -->
 
-  <section id="contacts">
-    <div class="contact-icon-content">
-      <h2>Contacts 📞</h2>
+  <!-- ===== Skills ===== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <p class="section-tag">Compétences</p>
+      <h2 class="section-title">Mes outils &amp; technologies</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-display"></i></div>
+          <h3>Front-end</h3>
+          <div class="pills">
+            <span>Angular</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Ionic</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Mobile</h3>
+          <div class="pills">
+            <span>Flutter</span><span>Ionic</span><span>Capacitor</span><span>App Store / Play Store</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+          <h3>Back-end</h3>
+          <div class="pills">
+            <span>Java</span><span>Spring Boot</span><span>Node.js</span><span>Hibernate / JPA</span><span>Keycloak</span><span>JHipster</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Données &amp; Analyse</h3>
+          <div class="pills">
+            <span>MySQL</span><span>PostgreSQL</span><span>Oracle</span><span>SQLite</span><span>Python (NumPy)</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-toolbox"></i></div>
+          <h3>Outils &amp; CMS</h3>
+          <div class="pills">
+            <span>Docker</span><span>Git / GitHub</span><span>Maven</span><span>WordPress</span><span>Drupal</span><span>Odoo</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Environnements</h3>
+          <div class="pills">
+            <span>Linux</span><span>Windows</span><span>macOS</span><span>API REST</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="contact-icons-wrapper">
+  <!-- ===== Experience ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <p class="section-tag">Parcours</p>
+      <h2 class="section-title">Expérience professionnelle</h2>
 
-      <div class="contact-icon-content">
-        <div class="contact-icon">
-          <i class="fa-solid fa-map-location-dot"></i>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">06/2025 – Présent</span>
+            <h3>Consultante informatique et Développeuse</h3>
+            <p class="timeline-company">CINERI, Dakar, Sénégal</p>
+            <ul>
+              <li>Mise en place d'une authentification centralisée et d'un plugin OTP pour l'authentification multi-facteur (MFA).</li>
+              <li>Développement d'un thème personnalisé pour Keycloak.</li>
+              <li>Cheffe de projet de l'application de gestion des inscriptions des étudiants (Spring Boot/Angular).</li>
+              <li>Conception du module de gestion d'accréditation pour l'application de gestion des orientations (Spring Boot/Angular).</li>
+              <li>Conception d'une application de gestion de délivrance de diplômes pour les bacheliers (Spring Boot/Angular).</li>
+            </ul>
+          </div>
         </div>
-        <div class="contact-info">
-          <span>Location</span>
-          <p>Sénégal, Dakar</p>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">11/2024 – 02/2025</span>
+            <h3>Consultante informatique et Développeuse</h3>
+            <p class="timeline-company">TechCo, Dakar, Sénégal</p>
+            <ul>
+              <li>Création d'une application de gestion des bulletins de salaire.</li>
+              <li>Intégration de l'API Postmark (e-mails) et des APIs SMS/WhatsApp pour notifier les utilisateurs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">06/2024 – 11/2024</span>
+            <h3>Consultante informatique et Développeuse</h3>
+            <p class="timeline-company">Consi, Remote, Sénégal</p>
+            <ul>
+              <li>Développement d'une application mobile (Flutter) pour les patients, avec intégration des APIs backend.</li>
+              <li>Refonte du site web sur WordPress.</li>
+              <li>Intégration des APIs SMS/WhatsApp et OTP, et de l'API PayPal (Node.js/Flutter) pour la gestion d'annonces.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">02/2022 – 06/2024</span>
+            <h3>Développeuse Web et Mobile</h3>
+            <p class="timeline-company">Saou Transport, Dakar</p>
+            <ul>
+              <li>Développement et refonte d'une application mobile (Ionic/Flutter) ; compilation iOS via Xcode, plugins Capacitor, déploiement sur l'App Store.</li>
+              <li>Ajout du module de gestion des colis (web) avec Spring/Angular et déploiement avec Docker.</li>
+              <li>Plateforme de mise en relation patients-professionnels de santé : recherche/géolocalisation de médecins, prise de rendez-vous en ligne, gestion des comptes et notifications.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">06/2021 – 05/2022</span>
+            <h3>Développeuse web et mobile — application de transport de type IoT</h3>
+            <p class="timeline-company">Sn software, Dakar, Sénégal</p>
+            <ul>
+              <li>Création d'interfaces et intégration d'API (Angular/Ionic) ; choix de l'architecture microservices et développement du gateway.</li>
+              <li>Conception d'une application mobile (Flutter) et module de gestion des colis (Spring/Angular).</li>
+              <li>Tableau de bord statistiques et géolocalisation des bus en temps réel ; application pour compagnie aérienne (Odoo).</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <h3 class="sub-title">Formation</h3>
+      <div class="education-list">
+        <div class="education-item">
+          <div><strong>INSTITUT SUP'INFO</strong> — Master, Dév. Web et Mobile, Dakar</div>
+          <span>2019 – 2021</span>
+        </div>
+        <div class="education-item">
+          <div>
+            <strong>INSTITUT SUP'INFO</strong> — Licence 3, Dév. Web et Mobile, Dakar
+            <p>Projet de fin d'études : application de collecte de données pour agents de terrain (Angular, Node.js), avec module d'analyse et de prédiction en Python (NumPy).</p>
+          </div>
+          <span>2017 – 2019</span>
+        </div>
+        <div class="education-item">
+          <div><strong>ISI</strong> — Licence 3, Réseaux informatiques, Dakar</div>
+          <span>2016 – 2018</span>
+        </div>
+        <div class="education-item">
+          <div><strong>UCAD</strong> — Licence 1, Science physique, Dakar</div>
+          <span>2013 – 2015</span>
+        </div>
+        <div class="education-item">
+          <div><strong>LCND</strong> — Bac S2, Fatick</div>
+          <span>2012 – 2013</span>
         </div>
       </div>
-    
-      <div class="contact-icon-content">
-        <div class="contact-icon">
-          <i class="fa-solid fa-phone"></i>
-        </div>
-        <div class="contact-info">
-          <span>phone</span>
-          <a href="https://api.whatsapp.com/message/VQOK5RWN5ZZYH1">
-           +221 77 824 68 68
-          </a>
-        </div>
-      </div>
 
-      <div class="contact-icon-content">
-        <div class="contact-icon">
+      <!-- Certificates -->
+      <h3 class="sub-title">Certificats</h3>
+      <ul class="cert-list">
+        <li><i class="fa-solid fa-certificate"></i> Concevoir un dispositif de suivi-évaluation — Groupe AFD (Agence Française de Développement)</li>
+        <li><i class="fa-solid fa-id-card"></i> Permis de conduire : B</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <p class="section-tag">Réalisations</p>
+      <h2 class="section-title">Projets</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Site vitrine — Websoft</h3>
+          <p class="project-tags"><span>HTML</span><span>CSS</span><span>WordPress</span></p>
+          <p>Conception et mise en ligne d'un site vitrine professionnel.</p>
+          <a href="https://websoft.website/" target="_blank" rel="noopener" class="project-link">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-truck"></i></div>
+          <h3>Site vitrine — Saou Transport</h3>
+          <p class="project-tags"><span>HTML</span><span>CSS</span></p>
+          <p>Site vitrine de l'entreprise de transport, présentant ses services et son activité.</p>
+          <a href="https://www.saoutransport.com/" target="_blank" rel="noopener" class="project-link">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Site — Consi</h3>
+          <p class="project-tags"><span>WordPress</span></p>
+          <p>Refonte du site web de l'entreprise sur WordPress.</p>
+          <a href="https://consi.sn/" target="_blank" rel="noopener" class="project-link">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-bus"></i></div>
+          <h3>HeyBus</h3>
+          <p class="project-tags"><span>Spring Boot</span><span>Angular</span></p>
+          <p>Plateforme de billetterie et de gestion de transport en ligne.</p>
+          <a href="https://www.heybus.net/" target="_blank" rel="noopener" class="project-link">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          <h3>E-commerce — Zouawa</h3>
+          <p class="project-tags"><span>HTML</span><span>CSS</span><span>WordPress</span><span>WooCommerce</span></p>
+          <p>Boutique en ligne complète avec gestion des commandes et paiements.</p>
+          <a href="https://zouawa.com/" target="_blank" rel="noopener" class="project-link">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-bus"></i></div>
+          <h3>Application de transport IoT</h3>
+          <p class="project-tags"><span>Spring Boot</span><span>Angular</span><span>Ionic</span></p>
+          <p>App mobile et web pour une compagnie de transport : billetterie, géolocalisation des bus en temps réel et tableau de bord statistiques.</p>
+          <span class="project-link disabled"><i class="fa-solid fa-lock"></i> Projet privé</span>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-truck-medical"></i></div>
+          <h3>Plateforme patients - professionnels de santé</h3>
+          <p class="project-tags"><span>Ionic</span><span>Flutter</span><span>Spring</span><span>Angular</span></p>
+          <p>Recherche et géolocalisation de médecins, prise de rendez-vous en ligne, gestion des comptes et notifications.</p>
+          <span class="project-link disabled"><i class="fa-solid fa-lock"></i> Projet privé</span>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <h3>Gestion de rendez-vous</h3>
+          <p class="project-tags"><span>Node.js</span><span>Flutter</span></p>
+          <p>Application de prise et de suivi de rendez-vous avec notifications.</p>
+          <span class="project-link disabled"><i class="fa-solid fa-lock"></i> Projet privé</span>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Collecte de données &amp; prédiction</h3>
+          <p class="project-tags"><span>Angular</span><span>Node.js</span><span>Python</span><span>NumPy</span></p>
+          <p>Projet de fin d'études : application de collecte de données pour agents de terrain, avec module d'analyse et de prédiction en Python.</p>
+          <span class="project-link disabled"><i class="fa-solid fa-lock"></i> Projet académique</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="section-tag">Contact</p>
+      <h2 class="section-title">Travaillons ensemble</h2>
+      <p class="contact-intro">
+        Disponible pour des missions freelance ou des opportunités de collaboration.
+        N'hésitez pas à me contacter via l'un des canaux ci-dessous.
+      </p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:fatoumanendiaye83@gmail.com">
           <i class="fa-solid fa-envelope-open-text"></i>
-        </div>
-        <div class="contact-info">
           <span>E-mail</span>
-          <a href="mailto:fatoumanendiaye83@gmail.com">
-           fatoumanendiaye83@gmail.com
-          </a>
+          <p>fatoumanendiaye83@gmail.com</p>
+        </a>
+
+        <a class="contact-card" href="https://wa.me/221777489885" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Téléphone / WhatsApp</span>
+          <p>+221 77 748 98 85</p>
+        </a>
+
+        <div class="contact-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Localisation</span>
+          <p>Sacrée Cœur, Dakar, Sénégal</p>
         </div>
+
+        <a class="contact-card" href="https://www.linkedin.com/in/fatou-man%C3%A9-ndiaye-2a87b4167/" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+          <p>fatou-mané-ndiaye</p>
+        </a>
       </div>
-
     </div>
   </section>
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="container-footer">
-      <h2>💻 </h2>
-      <h3> Fatou m.Ndiaye © 2023</h3>
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year"></span> Fatou Mané Ndiaye — Tous droits réservés.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Fatou83" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/fatou-man%C3%A9-ndiaye-2a87b4167/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:fatoumanendiaye83@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
     </div>
-  </section>
-  <!-- End Footer -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </footer>
+
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
 
   <script src="scripts.js"></script>
-
 </body>
-
 </html>
